@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de - Hospital Viedma</title>
+    <title>Contacto - Hospital Viedma</title>
     <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -22,20 +22,22 @@
     </header>
     <main class="container mx-auto p-4">
         <section class="my-8">
-            <h2 class="text-4xl font-bold mb-4">Acerca de Nosotros</h2>
-            <p class="text-lg mb-4">El Hospital Viedma es un centro de salud comprometido con la excelencia médica y el cuidado humano. Desde nuestra fundación, hemos trabajado para ofrecer servicios de salud de alta calidad a nuestra comunidad.</p>
-            <h3 class="text-2xl font-bold mb-2">Misión</h3>
-            <p class="mb-4">Somos un hospital público de tercer nivel que presta atención en salud de forma especializada y comprometida con calidad y calidez.</p>
-            <h3 class="text-2xl font-bold mb-2">Visión</h3>
-            <p class="mb-4">Ser el mejor hospital público de tercer nivel del departamento de Cochabamba y del país.</p>
-            <h3 class="text-2xl font-bold mb-2">Valores</h3>
-            <ul class="list-disc list-inside">
-                <li>Respeto</li>
-                <li>Transparencia</li>
-                <li> Innovación</li>
-                <li>Responsabilidad Social</li>
-                <li>Ética Profesional</li>
-            </ul>
+            <h2 class="text-4xl font-bold mb-4">Contáctanos</h2>
+            <form class="bg-white p-4 shadow-md rounded">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-bold mb-2">Nombre</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-bold mb-2">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-bold mb-2">Mensaje</label>
+                    <textarea id="message" name="message" class="w-full border border-gray-300 p-2 rounded" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+            </form>
         </section>
     </main>
     <footer class="bg-blue-600 text-white text-center p-4">
