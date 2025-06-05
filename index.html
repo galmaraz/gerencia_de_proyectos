@@ -2,14 +2,15 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Viedma</title>
-    <link href="./src/css/output.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Viedma</title>
+  <link href="./src/css/output.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-100 text-gray-800">
   <div class="relative w-full">
-    <header class="absolute top-0 left-0 right-0 z-20 text-white p-4 bg-white/30 backdrop-blur-md shadow-md">
+    <header class="absolute top-0 left-0 right-0 z-20 text-white p-4 bg-white/20 backdrop-blur-md shadow-md">
       <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold">Hospital Viedma</h1>
         <nav>
@@ -26,13 +27,11 @@
       </div>
     </header>
 
-    <!-- Banner con imagen, texto y tarjetas encima -->
     <div class="relative w-full">
-      <!-- Imagen de fondo -->
-      <img src="./src/img/img-1.jpg" alt="imagen principal"
-           class="w-full object-cover max-h-[800px] sm:max-h-[600px] md:max-h-[500px] lg:max-h-[700px]" />
 
-      <!-- Texto centrado -->
+      <img src="./src/img//index/img-1.jpg" alt="imagen principal"
+        class="w-full object-cover max-h-[800px] sm:max-h-[600px] md:max-h-[500px] lg:max-h-[700px]" />
+
       <section class="absolute inset-0 flex flex-col justify-center px-8 text-white z-10">
         <div class="max-w-4xl">
           <h2 class="text-4xl md:text-6xl font-bold mb-4">Bienvenidos al Hospital Viedma</h2>
@@ -40,21 +39,84 @@
         </div>
       </section>
 
-      <!-- Tarjetas sobre la imagen en la parte inferior -->
       <section class="absolute bottom-6 right-0 z-10 grid grid-cols-1 md:grid-cols-3 gap-6 pr-6">
-        <div class="bg-white/40 backdrop-blur-sm p-4 shadow-md rounded w-80">
-          <h3 class="text-xl font-bold mb-2">Atención Médica</h3>
+        <div class="bg-white/40 backdrop-blur-sm p-4 shadow-md rounded-xl w-80">
+          <h3 class="text-xl font-bold mb-2 text-gray-600">Atención Médica</h3>
           <p>Ofrecemos atención médica de calidad con los mejores profesionales.</p>
         </div>
-        <div class="bg-white/40 backdrop-blur-sm p-4 shadow-md rounded w-80">
+        <div class="bg-white/40 backdrop-blur-sm p-4 shadow-md rounded-xl w-80">
           <h3 class="text-xl font-bold mb-2">Emergencias 24/7</h3>
           <p>Estamos disponibles las 24 horas para cualquier emergencia.</p>
         </div>
-        <div class="bg-white/40 backdrop-blur-sm p-4 shadow-md rounded w-80">
+        <div class="bg-white/40 backdrop-blur-sm p-4 shadow-md rounded-xl w-80">
           <h3 class="text-xl font-bold mb-2">Tecnología Avanzada</h3>
           <p>Contamos con equipos de última generación para tu diagnóstico.</p>
         </div>
       </section>
+    </div>
+    <div class="">
+
+      <section id="about us" class="flex flex-col md:flex-row items-center pt-32 px-16 ">
+        <img src="./src/img//index/img-2.jpg" alt="Nuestro equipo" class="w-full md:w-1/2 rounded shadow-lg" />
+        <div class="md:w-1/2 bg-sky-100 rounded-xl px-8 py-14">
+          <h2 class="text-2xl text-blue-900 font-light mb-4">Sobre Nosotros</h2>
+          <h2 class="font-extrabold text-blue-900 text-5xl mb-4"> Mas de 20 años al servicio de la salud</h2>
+          <p class="mb-4 text-gray-500">Somos un hospital comprometido con la atención médica de calidad, cuidando de ti
+            y tu familia en
+            cada etapa.</p>
+          <a href="/src/pages/about.html" class=" bg-blue-900 text-white px-4 py-1 rounded-xl hover:underline">Ver más</a>
+        </div>
+      </section>
+
+      <section id="specialties" class="p-8 mt-20 bg-gray-100">
+        <h2 class="text-2xl font-bold text-left mb-6 text-sky-700">Especialidades Médicas</h2>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-4 text-center">
+          <div class="bg-white p-4 rounded shadow">🧒 Pediatría</div>
+          <div class="bg-white p-4 rounded shadow">❤️ Cardiología</div>
+          <div class="bg-white p-4 rounded shadow">👩‍⚕️ Ginecología</div>
+          <div class="bg-white p-4 rounded shadow">🦴 Traumatología</div>
+        </div>
+        <div class="text-center mt-6">
+          <a href="/src/pages/specialties.html" class="text-blue-600 hover:underline">Explorar especialidades</a>
+        </div>
+      </section>
+
+      <section id="doctors" class="px-40">
+        <h2 class="text-3xl font-bold text-center mb-6 text-sky-600">Nuestros Doctores</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center ">
+          <div class=" relative place-self-center">
+            <img src="/src/img/index/img-3.jpg" class=" h-96 w-full object-cover object-top rounded-xl mb-2" />
+            <div class="absolute bg-white shadow-lg h-16 w-[70%] rounded-xl left-1/2 -translate-x-1/2 -bottom-5 flex justify-center items-center flex-col">
+              <p class=" font-normal text-lg">Dr. Juan Pérez</p>
+              <p class=" text-gray-600 font-semibold text-xl">Cardiología</p>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="/src/img/index/img-4.jpg" class="h-96 w-full object-cover object-top rounded-xl   mb-2" />
+            <div class="absolute bg-white shadow-lg h-16 w-[70%] rounded-xl left-1/2 -translate-x-1/2 -bottom-5 flex justify-center items-center flex-col">
+              <p class="font-normal text-lg">Dra. Ana Torres</p>
+              <p class="text-gray-600 font-semibold text-xl">Pediatría</p>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="/src/img/index/img-5.jpg" class="h-96 w-full object-cover object-top rounded-xl  mb-2" />
+            <div class="absolute bg-white shadow-lg h-16 w-[70%] rounded-xl left-1/2 -translate-x-1/2 -bottom-5 flex justify-center items-center flex-col">
+              <p class="font-normal text-lg">Dr. Luis Ríos</p>
+              <p class="text-gray-600 font-semibold text-xl">Ginecología</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-6">
+          <a href="/src/pages/doctors.html" class="text-blue-600 hover:underline">Ver todos</a>
+        </div>
+      </section>
+
+      <section id="contact-short" class="p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">¿Necesitas ayuda médica ahora?</h2>
+        <p class="mb-4">Estamos aquí para ti. Agenda una cita o contáctanos por WhatsApp.</p>
+        <a href="/src/pages/contact.html" class="bg-green-600 text-white px-6 py-2 rounded">Ir al formulario</a>
+      </section>
+
     </div>
 
     <!-- Footer visible debajo -->
